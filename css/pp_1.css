@@ -1,0 +1,943 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pretendard-Regular';
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+    display: block;
+    /* font-family: 'Pretendard-Regular'; */
+}
+
+span {
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+}
+
+header,
+section,
+footer {
+    width: 100%;
+    float: left;
+}
+
+header,
+section,
+footer,
+div {
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+}
+
+html body { overflow-x: hidden;}
+
+.center_box {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    height: 140px;
+    /* border-bottom: 0.5px solid #666; */
+    /* box-shadow: 0 1px 5px 0 rgb(146, 146, 146); */
+    background-color: rgb(252, 252, 252);
+    position: relative ;
+    z-index: 10;
+}
+
+.logo a img {
+    width: 200px;
+    padding-left: 160px;
+    margin-top: -40px;
+}
+
+.top_menu {
+    float: right;
+    padding: 10px 30px;
+}
+
+.top_menu ul li {
+    float: left;
+    padding: 5px;
+
+}
+
+.top_menu a {
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+.top_menu ul li:after {
+    content: "|";
+    float: right;
+    color: #666;
+    margin-top: -19px;
+    margin-right: -7px;
+
+}
+
+.top_menu ul li:last-child:after {
+    content: "";
+}
+
+.top_menu2 {
+    padding-right: 30px;
+    margin-top: 10px;
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+}
+
+nav>ul>li {
+    float: left;
+    margin-top: 30px;
+}
+
+nav>ul>li>a {
+    font-size: 23px;
+    font-weight: bold;
+    padding: 0 40px;
+}
+
+nav>ul>li>a:hover {
+    color: rgb(111, 170, 224);
+}
+
+nav>ul>li>ul {
+    margin-top: 30px;
+}
+
+nav>ul>li>ul>li {
+    /* padding: 10px; */
+    display: none;
+    padding-top: 30px;
+    background-color: rgb(252, 252, 252);
+}
+
+nav>ul>li>ul>li>a {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+nav ul li:hover ul li {
+    display: block;
+}
+
+header .kr {
+    float: right;
+    margin-top: -115px;
+    margin-right: -50px;
+    height: 30px;
+    width: 200px;
+}
+
+header .kr div {
+    float: left;
+    padding: 0 10px;
+}
+header .kr .lang {
+}
+
+header .kr .lang span {
+    margin-left: 10px;
+}
+
+header .kr .lang .lang_sub {
+    padding: 15px 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: #666;
+    width: 60px;
+    display: none;
+}
+
+header .kr .lang .lang_sub li a {
+    color: #aaa;
+    text-align: center;
+}
+
+header .kr .lang .lang_sub li a.active {
+    color: white;
+}
+
+.lang {
+    margin-top: 11px;
+}
+
+header .kr .ham {
+    width: 40px;
+    margin-top: 12px;
+}
+
+nav li a span {
+    position: relative;
+}
+
+nav>ul>li>a span:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: rgb(5, 113, 163);
+    transition: all 0.3s;
+}
+
+nav>ul>li>a:hover span:after {
+    width: 100%;
+    left: 0;
+}
+
+nav>ul>li>ul>li>a span:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: rgb(5, 113, 163);
+    transition: all 0.5s;
+}
+
+nav>ul>li>ul>li>a:hover span:after {
+    width: 100%;
+    left: 0;
+}
+
+nav>ul>li>ul>li>a>span:hover {
+    color: rgb(5, 113, 163);
+}
+
+.no2 {
+    margin-top: 150px;
+    float: left;
+}
+
+.no2 .slide_1 .swiper {
+    overflow: visible;
+}
+
+.no2 .slide_1 .swiper-button-next {
+    right: 600px;
+    /* background-image: url(../img/NIE/arrow_right.png); */
+    width: 60px;
+    height: 30px;
+    background-size: cover;
+    /* opacity: 0.7; */
+    color: #666;
+    transition: all 0.3s;
+}
+
+.no2 .slide_1 .swiper-button-next:hover {
+    transform: scale(1.2, 1.2);
+    color: black;
+}
+
+.no2 .slide_1 .swiper-button-next:after {
+    /* content: ""; */
+}
+
+.no2 .slide_1 .swiper-button-prev {
+    left: 600px;
+    /* background-image:url(../img/NIE/arrow_left.png) ; */
+    width: 60px;
+    height: 30px;
+    background-size: cover;
+    color: #666;
+    transition: all 0.3s;
+}
+
+.no2 .slide_1 .swiper-button-prev:hover {
+    transform: scale(1.2, 1.2);
+    color: black;
+}
+
+.no2 .slide_1 .swiper-button-prev:after {
+    /* content: ""; */
+}
+
+.no2 .swiper-slide {
+    overflow: hidden;
+    border-radius: 15px 15px 15px 15px;
+    width: 600px;
+    height: 430px;
+}
+
+.no2 .slide_1 .swiper-pagination {
+    bottom: -40px;
+}
+
+.no2 .slide_1 .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
+
+.no2 .slide_1 .swiper-pagination-bullet-active {
+    background-color: #666;
+}
+
+
+
+.no3 {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.no3 h1 {
+    text-align: center;
+    color: rgb(61, 61, 61);
+    margin-bottom: 80px;
+}
+
+.no3 .center_box {
+    width: 1400px;
+}
+
+.no3 .book_list {
+    position: relative;
+    width: 1400px;
+    height: 400px;
+}
+
+.no3 .swiper {
+    width: 1280px;
+}
+
+.no3 .swiper .swiper-slide {
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: all 0.5s;
+    padding: 0;
+    height: 320px;
+}
+
+.no3 .swiper .swiper-slide .over {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px 0;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.no3 .swiper .swiper-slide:hover {
+    border: none;
+    padding: 7px;
+    background: linear-gradient(45deg, #b5eee2,
+            #F8F988);
+}
+
+.no3 .swiper .swiper-slide img {
+    width: 110px;
+    height: 160px;
+    box-shadow: 0 0 5px #ddd;
+}
+
+.no3 .swiper .swiper-slide h2 {
+    padding-top: 30px;
+    font-size: 16px;
+}
+
+.no3 .swiper-slide p {
+    padding-top: 10px;
+}
+
+.no3 .swiper-button-next {
+    color: #666;
+}
+
+.no3 .swiper-button-prev {
+    color: #666;
+}
+
+.no3 .swiper-pagination-bullet-active {
+    background-color: #666;
+}
+
+.research {
+    height: 220px;
+    border-radius: 15px;
+    background-color: #dafcf4;
+    /* box-shadow: 0px 0px 0px black; */
+}
+
+.research>div {
+    float: left;
+}
+
+.research_text {
+    margin-top: 60px;
+    margin-left: 120px;
+    line-height: 50px;
+}
+
+.research_text {
+    font-size: 20px;
+}
+
+.research_icon {
+    width: 220px;
+    margin-left: 280px;
+    margin-top: 6px;
+}
+
+.button_1 {
+    margin-left: 100px;
+    margin-top: 80px;
+    width: 200px;
+    height: 70px;
+    background-color: rgb(60, 153, 214);
+    border: none;
+    border-radius: 45px;
+}
+
+.research_click div {
+    float: left;
+}
+
+.research_click_text {
+    margin-top: 13px;
+    margin-left: 30px;
+    margin-right: 15px;
+
+}
+
+.research_click_text a {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.research_click_arrow {
+    width: 50px;
+}
+
+.talk {
+    margin-top: 200px;
+}
+
+.search1 {
+    float: left;
+}
+
+.search1 div {
+    float: left;
+}
+
+.search1 h1 {
+    margin-bottom: 30px;
+}
+
+.search_box {
+    width: 500px;
+    border-bottom: 1px solid #666;
+
+}
+
+.search_box input {
+    width: 500px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.search_box input:focus {
+    outline: none;
+}
+
+.button_2 {
+    width: 30px;
+    float: right;
+    background: transparent;
+    border: none;
+}
+
+.talk_box {
+    float: right;
+    position: relative;
+    width: 45%;
+    height: 380%;
+}
+
+.talk_box2 {
+    float: right;
+    width: 50%;
+    margin-top: -90px;
+    margin-right: 50px;
+}
+
+.talk_box div {
+    position: absolute;
+    border-radius: 20px 20px 0px 20px;
+    box-shadow: 3px 2px 6px black;
+    transition: all 0.3s;
+
+}
+
+.talk_box a {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.box1 {
+    left: 40px;
+    top: 60px;
+    background-color: rgb(255, 255, 255);
+    /* transition: all 0.3s; */
+}
+
+.box2 {
+    left: 10px;
+    bottom: 0px;
+    /* transition: all 0.3s; */
+
+}
+
+.box3 {
+    left: 200px;
+    top: 20px;
+
+}
+
+.box4 {
+    right: 150px;
+    top: 100px;
+
+}
+
+.box5 {
+    right: 120px;
+    bottom: 10px;
+
+}
+
+.box1:hover {
+    background-color: rgb(46, 136, 255);
+    transform: scale(1.2, 1.2);
+
+}
+
+.box1:hover a {
+    color: white;
+}
+
+.box2:hover {
+    background-color: rgb(66, 228, 147);
+    transform: scale(1.2, 1.2);
+}
+
+.box2:hover a {
+    color: white;
+}
+
+.box3:hover {
+    background-color: rgb(16, 0, 165);
+    transform: scale(1.2, 1.2);
+}
+
+.box3:hover a {
+    color: rgb(255, 255, 255);
+}
+
+.box4:hover {
+    background-color: black;
+    transform: scale(1.2, 1.2);
+}
+
+.box4:hover a {
+    color: white;
+}
+
+.box5:hover {
+    background-color: rgb(194, 128, 84);
+    transform: scale(1.2, 1.2);
+}
+
+.box5:hover a {
+    color: white;
+}
+
+.notice {
+    margin-top: 200px;
+}
+
+.notice .center_box>div {
+    width: 630px;
+    height: 260px;
+    border-radius: 20px;
+    float: left;
+    padding: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.notice .center_box div h1 {
+    margin-top: 50px;
+    font-size: 30px;
+    color: #666;
+}
+
+.notice .center_box div div {
+    float: left;
+}
+
+.notice .center_box .notice_left:hover {
+    background: linear-gradient(to bottom right, rgb(253, 252, 195), rgb(171, 245, 245));
+}
+
+.notice .center_box .notice_right:hover {
+    background: linear-gradient(to bottom left, rgb(253, 252, 195), rgb(171, 245, 245));
+}
+
+.notice_img {
+    width: 150px;
+    margin-left: 200px;
+}
+
+.notice .center_box div .arrow {
+    position: absolute;
+    left: 40px;
+    bottom: 60px;
+    width: 50px;
+    height: 15px;
+    transition: all 0.5s;
+}
+
+.notice .center_box div .arrow::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    border-bottom: 2px solid #666;
+    transform: translateY(-50%);
+}
+
+.notice .center_box div .arrow::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #666;
+    border-top: 2px solid #666;
+    transform: translateY(-50%) rotate(45deg);
+    display: block;
+}
+
+.notice .center_box div .arrow i {
+    overflow: hidden;
+    display: inline-block;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+}
+
+.notice .center_box div:hover h1 {
+    color: black;
+}
+
+.notice .center_box div:hover .arrow {
+    width: 30%;
+}
+
+.notice .center_box div:hover .arrow::before {
+    border-color: black;
+}
+
+.notice .center_box div:hover .arrow::after {
+    border-color: black;
+}
+
+.story {
+    margin-top: 200px;
+}
+
+.story .center_box .story_box {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    height: 1400px;
+    
+}
+
+
+.story .center_box .story_box div {
+    position: absolute;
+}
+
+.story .center_box .story_box .story_text {
+    width: 20%;
+}
+
+.story .center_box .story_box .story_text1 h1 {
+    font-size: 40px;
+    color: #82AAE3;
+}
+
+.story .center_box .story_box .story_text1 h2 {
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.story .center_box .story_box .story_text1 {
+    top: 100px;
+    left: 150px;
+}
+
+.story .center_box .story_box .story_text2 {
+    right: 0;
+    bottom: 300px;
+}
+
+.story .center_box .story_box .story_text2 h1 {
+    font-size: 40px;
+    color: #82AAE3;
+}
+
+.story .center_box .story_box .story_text2 h2 {
+    margin-top: 28px;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+
+.story .center_box .story_box .story_img {
+    width: 60%;
+    height: 640px;
+    overflow: hidden;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+}
+
+.story .center_box .story_box .story_img img {
+    width: 150%;
+
+
+}
+
+.story .center_box .story_box .story_img1 {
+    top: 0;
+    right: 0;
+}
+
+.story .center_box .story_box .story_img2 {
+    bottom: 0;
+    left: 0;
+}
+
+/* 하단슬라이드 */
+
+.f_slide {
+    width: 100%;
+    height: 1280px;
+    margin-top: 100px;
+}
+
+.f_slide .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1280px;
+}
+
+.f_slide .fs1 {
+    background-image: url(../img/NIE/fall-7530983_1920.jpg);
+}
+
+.f_slide .fs2 {
+    background-image: url(../img/NIE/wood-bench-986347_1920.jpg);
+}
+
+.f_slide .fs3 {
+    background-image: url(../img/NIE/footsteps-3938563_1920.jpg);
+}
+
+.f_slide .fs4 {
+    background-image: url(../img/NIE/path-1412341_1920.jpg);
+}
+
+.f_slide .fs5 {
+    background-image: url(../img/NIE/fall-513783_1920.jpg);
+}
+
+.f_slide .swiper-slide h3 {
+    color: rgba(255, 255, 255);
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 30%;
+    padding: 30px;
+
+    font-size: 70px;
+    margin-top: 550px;
+}
+
+.f_slide .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+/* footer영역 */
+
+footer {
+    width: 100%;
+    padding: 80px 0;
+    background-color: rgb(255, 255, 255);
+}
+
+footer .center_box .f_left {
+    float: left;
+}
+
+footer .center_box .f_right {
+    float: right;
+}
+
+footer .center_box .f_logo {
+    width: 200px;
+    margin-top: -90px;
+    margin-left: -35px;
+}
+
+footer .center_box address {
+    font-style: normal;
+    line-height: 26px;
+    font-size: 13px;
+    margin-top: -20px;
+}
+
+footer .center_box .sns {
+    margin-top: 10px;
+}
+
+footer .center_box .sns ul li {
+    width: 30px;
+    float: left;
+    margin-right: 10px;
+}
+
+footer .center_box .f_right div {
+    float: left;
+    margin-top: 29px;
+}
+
+footer .center_box .f_right div:first-child {
+    margin-right: 50px;
+}
+
+footer .center_box .f_right div ul {
+    float: left;
+    margin-top: 25px;
+}
+
+footer .center_box .f_right div ul li {
+    margin-right: 20px;
+}
+
+footer .center_box .f_right div ul li a {
+    padding-top: 15px;
+    color: rgb(0, 0, 0);
+}
+
+footer .center_box .f_right div h3 {
+    font-size: 18px;
+    color: rgb(111, 170, 224);
+}
+
+.popup {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    border-top: 3px solid rgb(86, 181, 219);
+    background-color: white;
+    box-sizing: border-box;
+    padding: 60px 80px;
+    display: none;
+}
+
+.popup .close_btn {
+    width: 40px;
+    float: right;
+}
+
+.popup > ul {
+    padding: 80px 200px;
+}
+.popup > ul > li {
+    display: inline-table;
+    margin: 30px 50px;
+    width: 200px;
+}
+
+.popup > ul >li > a {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    color: black;
+}
+.popup > ul >li > a:hover {
+    color: #82AAE3;
+}
+
+.popup ul li ul li a {
+    padding: 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.popup ul li ul li a:hover {
+    color: #82AAE3;
+}
+
+.top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 45px;
+    box-shadow: 0 2px 2px rgb(143, 143, 143);
+    background-color: #ffffff;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 13px;
+    cursor: pointer;
+    z-index: 500;
+    
+}
